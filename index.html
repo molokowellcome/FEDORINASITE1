@@ -104,7 +104,7 @@
             border: none;
             border-radius: var(--border-radius);
             cursor: pointer;
-            font-size: 1.2rem;
+            font-size: 1rem;
             transition: all 0.3s;
         }
 
@@ -549,10 +549,14 @@
         }
 
         .contacts-content {
-            display: grid;
+            display: flex;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
         }
+
 
         .contact-form {
             background: var(--white);
@@ -623,7 +627,7 @@
             .header .container {
                 flex-direction: column;
                 gap: 1rem;
-                display: none;
+                /* display: none; */
             }
 
             .nav {
@@ -640,12 +644,23 @@
 
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 1rem;
                 text-align: center;
             }
 
             .hero-text h1 {
-                font-size: 2rem;
+                font-size: 1.25rem;
+            }
+
+            .hero-text p {
+                font-size: 1.2rem;
+            }
+
+            .hero-image {
+                max-width: 180px;
+                align-items: center;
+                justify-items: center;
+                justify-self: center;
             }
 
             .hero-buttons {
@@ -658,9 +673,38 @@
                 gap: 2rem;
             }
 
+            .about-content h2{
+                gap:1rem;
+                font-size: 2rem;
+            }
+
+            .about-content p{
+                font-size: 1rem;
+            }
+
+            .about-content li{
+                font-size: 1rem;
+            }
+
+            .about-content img{
+                display: flex;
+                max-width: 250px;
+                align-items: center;
+                justify-items: center;
+                justify-self: center;
+            }
+
             .contacts-content {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+                display: flex;
+                justify-items: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .contacts-content a{
+                font-size: 2rem;
             }
 
             .services-grid {
@@ -694,6 +738,10 @@
 
             .section-title {
                 font-size: 2rem;
+            }
+
+            .contacts-content{
+                font-size: 1rem;
             }
         }
 
@@ -785,21 +833,21 @@
     <!-- Services -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Мои услуги</h2>
+            <h2 class="section-title">Запросы, с которыми я работаю</h2>
             <div class="services-grid">
                 <div class="service-card fade-in">
                     <i class="fas fa-heart"></i>
-                    <h3>Индивидуальные консультации</h3>
+                    <!-- <h3>Индивидуальные консультации</h3> -->
                     <p>Сложности в отношениях, беспокойство о будущем, связанное со страхом неудач и отсутствием уверенности в завтрашнем дне</p>
                 </div>
                 <div class="service-card fade-in">
                     <i class="fas fa-users"></i>
-                    <h3>Семейная терапия</h3>
+                    <!-- <h3>Семейная терапия</h3> -->
                     <p>Трудности во взаимоотношениях и коммуникации с ребёнком, сложности и проблемы у детей (отсутствие самостоятельности, неуверенность, низкая самооценка, трудности коммуникации со сверстниками, сложности в учебе и мотивации)</p>
                 </div>
                 <div class="service-card fade-in">
                     <i class="fas fa-brain"></i>
-                    <h3>Тревога и стресс</h3>
+                    <!-- <h3>Тревога и стресс</h3> -->
                     <p>Чувство тревоги и беспокойства из-за мнения окружающих, желание заботиться о других, забывая о себе</p>
                 </div>
             </div>
@@ -888,9 +936,11 @@
                     <div class="price">3 500 ₽</div>
                     <div class="duration">50 минут</div>
                     <ul class="features-list">
-                        <li>Разбор конкретной проблемы</li>
-                        <li>Индивидуальный план работы</li>
+                        <li>Исследуем ситуацию в безопасной для вас обстановке</li>
+                        <li>Получите профессиональный взгляд на беспокоящую вас ситуацию</li>
+                        <li>У вас будет информация о возможных стратегиях решения проблемы </li>
                     </ul>
+                    <a href="https://t.me/Ma81rui" class="btn btn-secondary">Записаться</a>
                     <!-- <button class="btn btn-primary">Выбрать</button> -->
                 </div>
                 
@@ -902,10 +952,12 @@
                     <ul class="features-list">
                         <li>Всего 2 900 рублей за консультацию</li>
                         <li>+ 2 встречи Вам в подарок</li>
+                        <li>возможна беспроцентная рассрочка оплаты</li>
                         <li>Системная работа над проблемой</li>
                         <li>Постоянная поддержка</li>
                         <li>Индивидуальная программа</li>
                     </ul>
+                    <a href="https://t.me/Ma81rui" class="btn btn-secondary">Записаться</a>
                     <!-- <button class="btn">Выбрать</button> -->
                 </div>
                 
@@ -1012,7 +1064,7 @@
     <!-- Contacts -->
     <section class="contacts" id="contacts">
         <div class="container">
-            <h2 class="section-title">Контакты</h2>
+            <!-- <h2 class="section-title">Контакты</h2> -->
             <div class="contacts-content">
                 <div>
                     <a href="https://t.me/Ma81rui" class="btn btn-secondary">Запись в Telegram     <i class="fab fa-telegram-plane"></i></a>
@@ -1036,7 +1088,7 @@
                         <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить сообщение</button>
                     </form>
                 </div> -->
-                <div class="contact-info fade-in">
+                <!-- <div class="contact-info fade-in">
                     <h3>Контактная информация</h3>
                     <p><i class="fas fa-phone"></i> +7 (910) 894 51 65</p>
                     <p><i class="fas fa-envelope"></i> m471111@mail.ru</p>
@@ -1045,10 +1097,10 @@
                     <div class="social-links">
                         <a href="#"><i class="fab fa-vk"></i></a>
                         <a href="https://t.me/psy_fedorina"><i class="fab fa-telegram"></i></a>
-                        <!-- <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a> -->
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -1056,7 +1108,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Психолог Марина Федорина. Все права защищены.</p>
+            <p>ИП Федорина Марина Александровна</p>
+            <p>ИНН 434546222756</p>
+            <p>ОГРНИП 323527500036987</p>
         </div>
     </footer>
 
