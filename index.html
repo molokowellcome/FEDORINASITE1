@@ -1146,14 +1146,6 @@
                     });
                 });
             });
-
-            // Обработчики для кнопок в секции цен
-            document.querySelectorAll('.pricing-card .btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const serviceType = this.closest('.pricing-card').querySelector('.service-type').textContent;
-                    alert(`Вы выбрали: ${serviceType}\nС вами свяжутся для подтверждения записи.`);
-                });
-            });
         });
     </script>
 </body>
