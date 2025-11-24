@@ -15,13 +15,33 @@
         }
 
         :root {
-            --primary-color: #6d7e8f;
+            /* основные цвета серый вариант */
+            /* --primary-color: #6d7e8f;
             --secondary-color: #8a9ba8;
             --accent-color: #a8b8c5;
             --text-dark: #2c3e50;
-            --text-light: #5d6d7e;
-            --background: #f8f9fa;
-            --white: #ffffff;
+            --text-light: #5d6d7e; */
+
+            /* основные цвета красный вариант */
+            --primary-color: #dc2626;         /* Яркий красный - основной акцент */
+            /* --primary-dark: #b91c1c;          /* Темно-красный для ховеров */
+            /* --primary-light: #ef4444;         */
+            --primary-soft: #fecaca;
+            --secondary-color: #ef4444;       /* Темно-синий/угольный */
+            --secondary-light: #fd8888;
+            --accent-color: #ea580c;          /* Оранжево-красный акцент */
+            --accent-light: #fdba74;
+            --text-dark: #b91c1c;             /* Темный текст */
+            --text-light: #ef4444;         
+            /* --text-muted: #9ca3af; */
+            --background: #fef2f2;            /* Очень светлый красный фон */
+            --background-alt: #f8fafc;        /* Альтернативный светлый фон */
+            --white: #ffffff;                 /* Чистый белый */
+            --gray-light: #f3f4f6;            
+
+
+            /* --background: #f8f9fa;
+            --white: #ffffff; */
             --shadow: 0 4px 6px rgba(0,0,0,0.1);
             --border-radius: 8px;
         }
@@ -95,6 +115,7 @@
         .btn-primary {
             background: var(--primary-color);
             color: var(--white);
+            font-size: 165%;
         }
 
         .btn-primary:hover {
@@ -310,7 +331,7 @@
         }
 
         .pricing-card.featured {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, var(--secondary-light), var(--primary-color));
             color: var(--white);
             transform: scale(1.0);
         }
@@ -729,7 +750,7 @@
                 <a href="#reviews">Отзывы</a>
                 <a href="#contacts">Контакты</a>
             </nav>
-            <button class="btn btn-primary">Записаться</button>
+            <!-- <button class="btn btn-primary">Записаться</button> -->
         </div>
     </header>
 
@@ -742,7 +763,7 @@
                     <p>Более 10 лет частной практики, опыт преподавания психологии. Автор и ведущая женских групп и тренингов. Счастливая жена и многодетная мама.</p>
                     <p>Своей основной миссией считаю - помогать женщинам, мамам справляться, понимать и осознавать, что происходит в их внутреннем мире, как их физическое и душевное состояние влияет на состояние их детей и семьи в целом.</p>
                     <div class="hero-buttons">
-                        <a href="https://t.me/Ma81rui" class="btn btn-primary">Записаться в Telegram</a>
+                        <a href="https://t.me/Ma81rui" class="btn btn-primary">Запись на консультацию</a>
                     </div>
                 </div>
                 <div class="hero-image">
